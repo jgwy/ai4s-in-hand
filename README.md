@@ -1,57 +1,106 @@
-<h1 align="center"> 项目名称（⚠️ Alpha内测版 / 🧪 Beta公测版） </h1>
+<h1 align="center">AI4S in Hand（⚠️ Alpha内测版）</h1>
+
+<p align="center"><strong>从科学问题到自主发现的 AI for Science 实践教程</strong></p>
 
 > [!CAUTION]
 > ⚠️ Alpha内测版本警告：此为早期内部构建版本，尚不完整且可能存在错误，欢迎大家提Issue反馈问题或建议。
 
-或者
+AI4S in Hand 面向想进入 AI for Science（AI4S）的跨学科学习者。它不试图把自然科学压缩成术语表，也不重复一套通用机器学习课程，而是回答一个更实际的问题：
 
-> [!WARNING]
-> 🧪 Beta公测版本提示：教程主体已完成，正在优化细节，欢迎大家提Issue反馈问题或建议。
+> 怎样把科学问题转化为可计算、可验证的 AI 任务，并让 AI 参与文献、假设、计算、实验与证据核验组成的科研循环？
 
-*这里写项目的各类介绍信息、背景、动机等内容*
+本项目的学习终点不是“知道一些 AI4S 名词”，而是完成一个**可运行、可解释、可复现、带证据链的最小科学发现闭环**。
 
-## 项目受众
+## 为什么是“双入口—合流”
 
-*注：这里写你的项目所面向的受众，本项目能给他们带来什么，对他们的基础能力要求有哪些*
+AI4S 的学习者经常卡在不同位置：Science 背景读者知道问题为何重要，却未必熟悉机器学习；AI 背景读者会训练模型，却未必理解科学变量、约束和验证逻辑。全书因此提供两个入口：
 
-## 在线阅读
-https://datawhalechina.github.io/repo-template
+```text
+Science 背景 ──→ 第一部分：AI 补给 ─────┐
+                                      ├──→ 第三部分：AI 驱动科研新范式
+AI 背景 ──────→ 第二部分：Science 补给 ─┘
+```
 
-## 目录
-*这里写你的项目目录，及其完成状态，已完成的部分添加上跳转链接*
+- **Science 背景路线：**序章 → 第一部分全部 → 第 6、11 章及一个跨领域章 → 第三部分；
+- **AI 背景路线：**序章 → 第二部分全部 → 第 4、5 章 → 第三部分；
+- **完整路线：**序章 → 第一部分 → 第二部分 → 第三部分。
 
-|  章节名   | 简介 | 状态 |
-|  ----  | ---- | ---- |
-| [第1章 xxx](https://github.com/datawhalechina/repo-template/blob/main/docs/chapter1)  | xxx | ✅ |
-| [第2章 xxx](https://github.com/datawhalechina/repo-template/blob/main/docs/chapter2)  | xxx | ✅ |
-| [第3章 xxx](https://github.com/datawhalechina/repo-template/blob/main/docs/chapter3)  | xxx | ✅ |
-| 第4章  | xxx | 🚧 |
+两条路线不是两套互不相干的教材。它们共享任务语言、贯穿案例和质量标准，并在第三部分汇合。
 
-## 贡献者名单
+## 你将获得什么
 
-| 姓名 | 职责 | 简介 |
-| :----| :---- | :---- |
-| 小明 | 项目负责人 | 一个理想主义者 |
-| 小红 | 第1章贡献者 | 小明的朋友 |
-| 小强 | 第2章贡献者 | 小明的朋友 |
+完成核心内容后，你应该能够：
 
-*注：表头可自定义，但必须在名单中标明项目负责人*
+1. 把科学问题拆解为预测、模拟、生成、逆问题、优化或序贯决策任务；
+2. 为科学数据选择合适的表示、划分、基线、指标和不确定性表达；
+3. 识别数据泄漏、错误外推、引用幻觉和“高分即发现”等常见陷阱；
+4. 理解物理先验、科学约束、实验验证和证据质量为何决定模型是否可信；
+5. 使用代理模型、主动学习或贝叶斯优化搭建虚拟实验闭环；
+6. 使用带来源追踪的方法完成文献检索与证据综合；
+7. 区分自动化、自治和科学发现，并为 AI 辅助研究保留人类审查与可复现记录。
+
+## 目录与进度
+
+| 部分 | 内容 | 当前状态 |
+| --- | --- | :---: |
+| [序章：进入 AI for Science](docs/preface/index.md) | 第 0 章 AI4S 学习地图 | ✍️ 初稿 |
+| [第一部分：面向科学问题的 AI 补给](docs/part1-ai-foundations/index.md) | 1 科学问题与学习任务 · 2 科学数据与可信基线 · 3 科学结构深度学习 · 4 科学机器学习与计算加速 · 5 从预测到决策与发现 | ✍️ 初稿 |
+| [第二部分：面向 AI4S 的 Science 补给](docs/part2-science-foundations/index.md) | 6 科学方法与可信验证 · 7 物理与计算科学 · 8 化学与分子 · 9 材料 · 10 生命科学 · 11 领域驱动的经典 AI4S | ✍️ 初稿 |
+| [第三部分：AI 驱动的科研新范式](docs/part3-research-paradigm/index.md) | 12 文献智能 · 13 研究问题 · 14 计算研究 · 15 高通量与自动化实验室 · 16 自主发现闭环 · 17 写作评审与传播 · 18 可信与责任 · 19 综合项目 | ✍️ 初稿 |
+
+状态说明：✍️ 表示可试读、待领域专家和社区共同审阅的 Alpha 初稿，不表示内容已经定稿。
+
+## 贯穿案例
+
+- **分子或材料性质预测与序贯筛选：**贯穿数据表示、结构感知模型、可信划分、不确定性、贝叶斯优化和虚拟实验闭环；
+- **动力系统或 PDE 代理模型：**贯穿数值模拟、物理约束、代理模型、外推和物理一致性评价；
+- **蛋白质预训练表示迁移（扩展）：**展示科学基础模型的使用方式，不要求从头训练大模型。
+
+核心实验优先支持 CPU 或免费 Notebook 环境。当前提供三个已从头执行的教学 Notebook：
+
+- [科学数据划分与可信基线](notebooks/part1/02_scientific_data_baseline.ipynb)
+- [动力系统代理的插值与外推](notebooks/part1/04_dynamics_surrogate.ipynb)
+- [有限预算序贯筛选](notebooks/part1/05_sequential_screening.ipynb)
+
+它们使用确定性合成数据演示评估逻辑，不把教学结果外推为真实分子、材料或物理系统的性能结论。
+
+## 本地阅读
+
+需要 Node.js 18 或更高版本。
+
+```bash
+npm install
+npm run docs:dev
+```
+
+构建静态站点：
+
+```bash
+npm run docs:build
+```
+
+在线阅读地址将在站点首次部署并核验后补充，当前请使用本地预览。
+
+## 写作与引用原则
+
+- 先讲科学问题，再引入方法；每个高级方法都要和简单基线比较；
+- 重要事实回到原始论文、勘误、DOI、官方文档或机构来源；
+- 同时说明数据划分、指标、适用范围、失败案例和证据质量；
+- 区分已证实能力、研究原型与未来设想；
+- 不把模型生成的文本、产品宣传或单次演示直接当作科学证据；
+- 自动化实验室以架构、虚拟实验和安全设计为主，不提供缺乏安全条件的危险实验操作指引。
+
+详细规则见[写作指南](docs/appendices/writing-guide.md)、[引用与事实核验](docs/appendices/references.md)和[可复现性规范](docs/appendices/reproducibility.md)。
 
 ## 参与贡献
 
-- 如果你发现了一些问题，可以提Issue进行反馈，如果提完没有人回复你可以联系[保姆团队](https://github.com/datawhalechina/DOPMC/blob/main/OP.md)的同学进行反馈跟进~
-- 如果你想参与贡献本项目，可以提Pull Request，如果提完没有人回复你可以联系[保姆团队](https://github.com/datawhalechina/DOPMC/blob/main/OP.md)的同学进行反馈跟进~
-- 如果你对 Datawhale 很感兴趣并想要发起一个新的项目，请按照[Datawhale开源项目指南](https://github.com/datawhalechina/DOPMC/blob/main/GUIDE.md)进行操作即可~
+项目发起人：
+Datawhale 意向成员、东南大学化学化工学院本科生**张正明**（[@jgwy](https://github.com/jgwy)）。
 
-## 关注我们
+欢迎通过 Issue 反馈科学错误、引用问题、复现失败和学习体验。提交内容贡献时，请同时说明适用读者、学习产物、数据与代码来源、运行环境以及验证方式。领域章节还需要对应学科背景的 Reviewer 审核。
 
-<div align=center>
-<p>扫描下方二维码关注公众号：Datawhale</p>
-<img src="https://raw.githubusercontent.com/datawhalechina/pumpkin-book/master/res/qrcode.jpeg" width = "180" height = "180">
-</div>
+本项目拟申请加入 Datawhale 开源学习社区，立项和协作流程参考 [Datawhale DOPMC](https://github.com/datawhalechina/DOPMC)。
 
 ## LICENSE
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-lightgrey" /></a><br />本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
-
-*注：默认使用CC 4.0协议，也可根据自身项目情况选用其他协议*
+本作品采用 [CC BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议。

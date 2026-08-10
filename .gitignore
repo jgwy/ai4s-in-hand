@@ -1,3 +1,13 @@
 node_modules/
 docs/.vitepress/dist
 docs/.vitepress/cache
+docs/superpowers/
+.DS_Store
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+
+# Local credentials and environment overrides
+.env
+.env.*
+!.env.example

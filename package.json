@@ -1,4 +1,7 @@
 {
+  "name": "ai4s-in-hand",
+  "private": true,
+  "description": "从科学问题到自主发现的 AI for Science 实践教程",
   "devDependencies": {
     "markdown-it-mathjax3": "^4.3.2",
     "vitepress": "^2.0.0-alpha.15"
@@ -6,7 +9,10 @@
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:preview": "vitepress preview docs",
+    "curriculum:check": "python3 scripts/check_curriculum.py",
+    "notebooks:build": "python3 scripts/build_notebooks.py",
+    "notebooks:verify": "python3 scripts/verify_notebooks.py"
   },
   "dependencies": {
     "vitepress-plugin-image-viewer": "^1.1.6"
